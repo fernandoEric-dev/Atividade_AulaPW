@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Inscrição Simples</h1>
+    </header>
+
+    <main>
+        <form>
+            <section>
+                <label for="nome">Nome do aluno:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Ex:email@gmail.com" required>
+                <br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11)9999-9999" required>
+                <br><br>
+
+                <label for="data">Data de nascimento:</label>
+                <input type="date" id="data" name="data" required>
+            </section>
+
+            <section>
+                <h3>Selecione seu Gênero</h3>
+                <label>
+                    <input type="radio" name="genero" value="masculino" required> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="feminino"> Feminino
+                </label>
+                    <input type="radio" name="genero" value="nao_declarar"> Prefiro não declarar
+                <label>
+            </section>
+
+            <section>
+                <br>
+               <h4><label for="mensagem">Por qual motivo gostaria de participar?</label> </h4>
+                <br>
+                <textarea id="mensagem" name="mensagem" rows="5" maxlength="200" required></textarea>
+            </section>
+
+            <section>
+                <br>
+                <label for="inscricao">Tipo de inscrição:</label>
+                <select id="inscricao" name="inscricao" required>
+                    <option value="" > Opções</option>
+                    <option value="palestrante">Palestrante</option>
+                    <option value="participante">Participante</option>
+                    <option value="voluntario">Voluntário</option>
+                </select>
+            </section>
+
+            <br>
+            <section>
+                <button type="reset">Limpar Formulário</button>
+                <button type="submit">Enviar inscrição</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
